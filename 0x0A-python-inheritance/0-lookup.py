@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-"""Gets a list of active members in a class.
+"""Define an object attribute lookup function"""
 
-	obj = Given input
-
-	Return: a list of objects
-"""
 def lookup(obj):
-	"""Got indent to work"""
+	"""Got indent to work.Return a list of object attributes."""
 	return(dir(obj))
