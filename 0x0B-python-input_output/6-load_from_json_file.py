@@ -1,14 +1,18 @@
 #!/usr/bin/python3
-"""Write a function that creates an Object from a "JSON file":"""
+"""JSON conversion to objects"""
 import json
 
+
 def load_from_json_file(filename):
-	"""
-	A function to load object from a file
-	Args:
-		filename = file to load from.
-	Return:
-		return an an object using json.load
-	"""
-	with open(filename, 'r', encoding="utf-8") as f:
-		return json.load(f)
+    """A function that creates an object from a JSON file
+
+    Args:
+        filename : file to write into
+
+    Returns:
+        the object.
+
+    """
+
+    with open(filename) as f:
+        return json.load(f)

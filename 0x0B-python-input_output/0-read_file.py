@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-"""Write a function that reads a text file (UTF8) and prints it to stdout:"""
-def read_file(filename=""):
-	"""
-	collects filename and returns file object.
-	Args:
-		filename = given filename.
+"""Reading a text file"""
 
-	Return:
-		f = open file object.
-	"""
-	with open(filename, encoding="utf-8") as f:
-		print(f.read(), end="")
+
+def read_file(filename=""):
+    """A functions that reads a text file and prints it to stdout
+
+    Args:
+        filename (str): The name of the file to read from.
+
+    """
+
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end="")
