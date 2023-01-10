@@ -3,8 +3,8 @@
 def write_file(filename="", text=""):
 	"""
 	Args:
-		filename = file to which the string is to be writen to.
-		text = String to be appended to 'filename',
+		filename: file to which the string is to be writen to.
+		text: String to be appended to 'filename',
 
 	Return:
 		Number of characters written (output of 'write' object).
